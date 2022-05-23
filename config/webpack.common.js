@@ -25,7 +25,7 @@ module.exports = {
     // new BundleAnalyzerPlugin(),
   ],
   resolve: {
-    alias: { '@': path.resolve(__dirname, '../src') },
+    alias: { '@': path.resolve(__dirname, '../src/') },
     extensions: ['.js', '.jsx', '.css', '.json'],
   },
 };
