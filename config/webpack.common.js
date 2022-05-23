@@ -1,11 +1,18 @@
-//webpack.common.js
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+// webpack.common.js
 const path = require('path');
-const webpack = require('webpack');
+
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 // const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '../src'),
+    },
+    extensions: ['.js', '.jsx', '.css'],
+  },
   entry: `${path.resolve(__dirname, '../src')}/index.js`,
   module: {
     rules: [
@@ -24,8 +31,4 @@ module.exports = {
     new ReactRefreshWebpackPlugin(),
     // new BundleAnalyzerPlugin(),
   ],
-  resolve: {
-    alias: { '@': path.resolve(__dirname, '../src/') },
-    extensions: ['.js', '.jsx', '.css', '.json'],
-  },
 };
