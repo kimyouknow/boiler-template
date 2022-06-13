@@ -1,12 +1,12 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
-// webpack.common.js
 const path = require('path');
 
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const dotenv = require('dotenv');
 const webpack = require('webpack');
 // const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
+dotenv.config();
 
 module.exports = {
   resolve: {
@@ -25,6 +25,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({ React: 'react' }),
     new ReactRefreshWebpackPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env),
+    }),
     // new BundleAnalyzerPlugin(),
   ],
 };
