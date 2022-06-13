@@ -3,9 +3,9 @@ import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 
 import App from '@/App';
-import { theme } from '@/styles/theme';
-import GlobalStyle from '@/styles/GlobalStyles';
 import { worker } from '@/mocks/browser';
+import GlobalStyle from '@/styles/GlobalStyles';
+import { theme } from '@/styles/theme';
 
 const container = document.getElementById('root');
 const root = createRoot(container as Element);

@@ -1,6 +1,6 @@
-import pauseCircleIcon from '@/assets/icons/pauseCircle.svg';
-
 import styled from 'styled-components';
+
+import pauseCircleIcon from '@/assets/icons/pauseCircle.svg';
 
 export const Container = styled.div``;
 
