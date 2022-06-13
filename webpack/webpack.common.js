@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
-// webpack.common.js
 const path = require('path');
 
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
@@ -17,7 +14,12 @@ module.exports = {
   },
   entry: `${path.resolve(__dirname, '../src')}/index.tsx`,
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({

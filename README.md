@@ -12,3 +12,5 @@ https://baeharam.netlify.app/posts/lint/Lint-ESLint-+-Prettier-설정하기
 https://cocoze.tistory.com/108
 
 https://stackoverflow.com/questions/59265981/typescript-eslint-missing-file-extension-ts-import-extensions
+
+https://michisarm.com/entry/React-StoryBook에서-SVG-사용하기-TypeScript

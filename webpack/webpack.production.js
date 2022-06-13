@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
-// webpack.production.js
 const path = require('path');
 
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
