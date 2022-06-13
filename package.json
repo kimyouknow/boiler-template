@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "msw": "REACT_APP_MOCK_TOOL=msw react-scripts start",
     "dev": "webpack-dev-server --config webpack/webpack.development.js",
     "prod": "webpack-dev-server --config webpack/webpack.production.js",
     "build:dev": "webpack --config webpack/webpack.development.js",
@@ -52,6 +53,7 @@
     "eslint-plugin-react": "^7.30.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
+    "msw": "^0.42.1",
     "prettier": "^2.6.2",
     "sass": "^1.52.1",
     "sass-loader": "^13.0.0",
@@ -67,5 +69,8 @@
   },
   "browserslist": [
     "ie 11"
-  ]
+  ],
+  "msw": {
+    "workerDirectory": "public"
+  }
 }
