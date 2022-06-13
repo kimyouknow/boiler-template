@@ -10,7 +10,7 @@ import { worker } from '@/mocks/browser';
 const container = document.getElementById('root');
 const root = createRoot(container as Element);
 
-if (process.env.REACT_APP_MOCK_TOOL === 'msw') {
+if (process.env.MOCK_TOOL === 'msw') {
   worker.start();
 }
 

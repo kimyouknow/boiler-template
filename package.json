@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "msw": "REACT_APP_MOCK_TOOL=msw react-scripts start",
+    "msw": "MOCK_TOOL=msw webpack-dev-server --config webpack/webpack.development.js",
     "dev": "webpack-dev-server --config webpack/webpack.development.js",
     "prod": "webpack-dev-server --config webpack/webpack.production.js",
     "build:dev": "webpack --config webpack/webpack.development.js",
@@ -26,8 +26,8 @@
     "dotenv": "^16.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5",
-    "react-refresh": "^0.13.0"
+    "react-refresh": "^0.13.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
