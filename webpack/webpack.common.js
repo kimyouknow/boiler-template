@@ -22,6 +22,10 @@ module.exports = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
+      {
+        test: /\.(woff|woff2|otf|ttf|eot)$/,
+        use: 'file-loader',
+      },
     ],
   },
   plugins: [
