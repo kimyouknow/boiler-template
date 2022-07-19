@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import PauseCircleIcon from '@/assets/icons/pauseCircle.svg';
 
 export const Container = styled.div`
-  width: 24px;
-  height: 24px;
   h1 {
     font-family: 'NanumMyeongjo';
     background-color: tomato;
