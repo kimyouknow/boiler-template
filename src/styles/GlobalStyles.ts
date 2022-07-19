@@ -8,9 +8,10 @@ const GlobalStyle = createGlobalStyle`
 ${Normalize}
 ${fonts}
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans';
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 button,
 input,

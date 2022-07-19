@@ -23,8 +23,8 @@ module.exports = {
         use: ['@svgr/webpack'],
       },
       {
-        test: /\.(woff|woff2|otf|ttf|eot)$/,
-        use: 'file-loader',
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },
