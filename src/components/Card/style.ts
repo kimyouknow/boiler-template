@@ -11,7 +11,12 @@ export const Container = styled.div`
   }
 `;
 
-export const pauseCircle = styled(pauseCircleIcon)`
+export const ReactIconImg = styled.img`
+  width: 50px;
+  height: 50px;
+`;
+
+export const PauseCircle = styled(pauseCircleIcon)`
   width: 24px;
   height: 24px;
 `;

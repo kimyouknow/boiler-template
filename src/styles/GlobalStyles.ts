@@ -26,7 +26,7 @@ textarea {
 }
 a,
 button {
-    text-decoration: none;
+  text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
