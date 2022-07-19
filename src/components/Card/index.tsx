@@ -7,17 +7,13 @@ interface Iprops {
   msg: string;
 }
 
-function Card({ content, msg }: Iprops) {
+export default function Card({ content, msg }: Iprops) {
   return (
     <S.Container>
-      <h1>
-        {content} {msg}
-        <span>asdfasdf</span>
-      </h1>
+      <h1>{msg}</h1>
+      <p>{content}</p>
       <S.ReactIconImg src={reactIconImg} alt="react-icon" />
       <S.PauseCircle />
     </S.Container>
   );
 }
-
-export default Card;

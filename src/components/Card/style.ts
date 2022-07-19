@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import pauseCircleIcon from '@/assets/icons/pauseCircle.svg';
+import PauseCircleIcon from '@/assets/icons/pauseCircle.svg';
 
 export const Container = styled.div`
   width: 24px;
@@ -16,7 +16,7 @@ export const ReactIconImg = styled.img`
   height: 50px;
 `;
 
-export const PauseCircle = styled(pauseCircleIcon)`
+export const PauseCircle = styled(PauseCircleIcon)`
   width: 24px;
   height: 24px;
 `;
