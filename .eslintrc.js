@@ -10,6 +10,7 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -27,8 +28,19 @@ module.exports = {
     '@typescript-eslint/no-var-require': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'prettier/prettier': [
+      'error',
+      {},
+      {
+        usePrettierrc: true,
+      },
+    ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+      },
+    ],
     'no-undef': 'off',
     'import/no-unresolved': 'off',
     'react/react-in-jsx-scope': 'off',
